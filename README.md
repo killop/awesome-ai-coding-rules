@@ -1,123 +1,183 @@
-# Cursor Spec Workflow Rule
+# AI Coding Rules Collection
 
 *[中文文档 / Chinese Documentation](README-CN.md)*
 
-A comprehensive workflow rule for Cursor IDE that transforms rough feature ideas into detailed specifications, designs, and implementation plans using a systematic spec-driven development approach.
+A comprehensive collection of AI coding rules and workflows for Cursor IDE, designed to enhance development productivity through specialized AI agents and systematic workflows.
 
-## What is Spec-Driven Development?
+## 🚀 Overview
 
-Spec-driven development is a methodology that breaks down complex feature development into three systematic phases:
+This repository contains a curated set of AI coding rules that transform how you interact with AI in development environments. Each rule specializes in specific development tasks, from requirements gathering to code refactoring, enabling more focused and effective AI assistance.
 
-1. **Requirements Gathering** - Transform ideas into structured user stories and acceptance criteria
-2. **Design Documentation** - Create comprehensive technical designs with architecture and components
-3. **Implementation Planning** - Generate actionable task lists for code implementation
+## 📂 Rule Categories
 
-## Features
+### 🔄 Development Workflows
 
-- **Systematic Workflow**: Guided three-phase process from idea to implementation
-- **EARS Format Requirements**: Uses Easy Approach to Requirements Syntax for clear acceptance criteria
+#### Spec Workflow
+**File**: `spec-workflow.md`
+
+A systematic spec-driven development workflow that transforms rough feature ideas into detailed specifications, designs, and implementation plans.
+
+**Key Features**:
+- **3-Phase Process**: Requirements → Design → Implementation Tasks
+- **EARS Format**: Uses Easy Approach to Requirements Syntax for clear acceptance criteria
 - **Research Integration**: Conducts necessary research during design phase
-- **Task-Driven Implementation**: Generates specific, actionable coding tasks
-- **Iterative Feedback**: Requires explicit user approval before progressing between phases
-- **Todo Integration**: Tracks progress using Cursor's todo system
+- **Iterative Feedback**: Requires explicit user approval between phases
+- **Task Management**: Integrates with Cursor's todo system
 
-## Installation
+**Usage**: `I want to create a spec for [your feature idea]`
 
-1. Clone this repository to your project directory:
-   ```bash
-   git clone https://github.com/yourusername/cursor-spec-workflow-rule.git
-   cd cursor-spec-workflow-rule
-   ```
+#### RIPER-5 Workflow
+**Files**: `riper-5-workflow-EN.md`, `riper-5-workflow-CN.md`
 
-2. Copy the rule file to your project's Cursor rules directory:
-   ```bash
-   mkdir -p .cursor/rules
-   cp .cursor/rules/spec-workflow.mdc .cursor/rules/
-   ```
+A 5-mode AI development collaboration framework designed to prevent unauthorized code changes while maintaining structured development processes.
 
-3. The rule will be automatically loaded by Cursor when you restart the IDE.
+**The 5 Modes**:
+1. **RESEARCH**: Information gathering and deep understanding
+2. **INNOVATE**: Creative solution generation
+3. **PLAN**: Strategic implementation planning
+4. **EXECUTE**: Controlled code implementation
+5. **REFLECT**: Quality assessment and optimization
 
-## Usage
+**Key Features**:
+- **Mode Declaration**: Every response must declare current operating mode
+- **Systematic Thinking**: Integrates systems, dialectical, innovative, and critical thinking
+- **Change Control**: Prevents unauthorized modifications to existing code
+- **Branch Management**: Includes git workflow integration
 
-### Starting a New Spec
+### 📝 Documentation & Content
 
-1. **Initiate the workflow** by describing your feature idea to Cursor:
-   ```
-   I want to create a spec for [your feature idea]
-   ```
+#### PRD Writer
+**File**: `prd-writer.md`
 
-2. **Requirements Phase**: The AI will:
-   - Generate an initial requirements document at `.cursor/specs/{feature-name}/requirements.md`
-   - Create user stories and EARS-format acceptance criteria
-   - Ask for your approval before proceeding
+A specialized agent for creating comprehensive Product Requirements Documents (PRDs) following industry best practices.
 
-3. **Design Phase**: After requirements approval:
-   - Conducts necessary research
-   - Creates a comprehensive design document at `.cursor/specs/{feature-name}/design.md`
-   - Includes architecture, components, data models, and testing strategy
+**Key Features**:
+- **Structured Output**: Organized sections including goals, personas, requirements, UX flows
+- **User Stories**: Comprehensive user stories with unique IDs and acceptance criteria
+- **Technical Considerations**: Includes scalability, performance, and integration points
+- **Professional Format**: Industry-standard PRD formatting
 
-4. **Implementation Phase**: After design approval:
-   - Generates an actionable task list at `.cursor/specs/{feature-name}/tasks.md`
-   - Creates numbered, checkbox-format coding tasks
-   - Each task references specific requirements
+**Usage**: `Create a PRD for [your project/feature]`
 
-### Executing Tasks
+#### Content Writer
+**File**: `content-writer.md`
 
-Once your spec is complete, you can execute individual tasks:
+A content marketing and copywriting agent optimized for creating engaging, informative content that explains complex topics clearly.
 
-1. Open the `tasks.md` file for your feature
-2. Click "Start task" next to any task item
-3. The AI will implement that specific task based on your requirements and design
-4. Review the implementation before proceeding to the next task
+**Key Features**:
+- **Two Modes**: Outline creation and content writing
+- **Readability Focus**: Targets 8th-grade reading level with varied sentence structure
+- **Research Integration**: Uses web search and MCP servers for fact verification
+- **Anti-AI Detection**: Natural writing patterns with controlled imperfections
+- **Strict Guidelines**: Avoids overused AI phrases and maintains authenticity
 
-### File Structure
+**Usage**: 
+- Outline: `Create an outline for an article about [topic]`
+- Writing: `Write the full article based on the outline`
 
-The workflow creates the following structure:
+### 🔧 Code Enhancement
+
+#### Code Refactorer
+**File**: `code-refactorer.md`
+
+A specialized agent for improving existing code structure, readability, and maintainability without changing functionality.
+
+**Key Features**:
+- **Systematic Analysis**: Identifies duplication, naming issues, complexity problems
+- **Preservation Focus**: Maintains exact functionality while improving structure
+- **Best Practices**: Follows established patterns and conventions
+- **Risk Management**: Prioritizes high-value, low-risk improvements
+- **Clear Explanations**: Explains what, why, and how for each refactoring suggestion
+
+**Usage**: `Help me refactor this code` or `Clean up the [specific component]`
+
+## 🛠️ Installation
+
+### Method 1: Individual Rules
+Copy specific rule files to your project's Cursor rules directory:
+
+```bash
+# Create rules directory
+mkdir -p .cursor/rules
+
+# Copy desired rules (example)
+cp spec-workflow.md .cursor/rules/
+cp code-refactorer.md .cursor/rules/
 ```
-.cursor/
-  specs/
-    {feature-name}/
-      requirements.md    # User stories and acceptance criteria
-      design.md         # Technical design and architecture
-      tasks.md          # Implementation task checklist
+
+### Method 2: Full Collection
+Clone the entire repository and link to your project:
+
+```bash
+# Clone repository
+git clone https://github.com/yourusername/cursor-spec-workflow-rule.git
+
+# Create symbolic links (recommended)
+mkdir -p .cursor/rules
+ln -s /path/to/cursor-spec-workflow-rule/*.md .cursor/rules/
 ```
 
-## Workflow Phases
+### Method 3: Submodule (For Git Projects)
+Add as a git submodule:
 
-### 1. Requirements Gathering
-- Transforms rough ideas into structured requirements
-- Uses user story format: "As a [role], I want [feature], so that [benefit]"
-- Creates EARS-format acceptance criteria
-- Requires explicit user approval before proceeding
+```bash
+git submodule add https://github.com/yourusername/cursor-spec-workflow-rule.git .cursor/ai-rules
+ln -s .cursor/ai-rules/*.md .cursor/rules/
+```
 
-### 2. Design Documentation
-- Conducts research on best practices and existing patterns
-- Creates comprehensive technical design
-- Includes architecture, components, interfaces, data models
-- Addresses error handling and testing strategies
+## 🎯 Usage Guidelines
 
-### 3. Implementation Planning
-- Converts design into actionable coding tasks
-- Prioritizes test-driven development
-- Creates incremental, manageable steps
-- References specific requirements for each task
+### Rule Activation
+In Cursor, reference specific rules using the `@` symbol:
+```
+@spec-workflow I want to create a spec for user authentication
+@code-refactorer Help me clean up this messy function
+@prd-writer Create a PRD for our new dashboard feature
+```
 
-## Best Practices
+### Best Practices
+- **One Rule at a Time**: Focus on one specialized task per interaction
+- **Clear Context**: Provide specific context about your project and requirements
+- **Follow Workflows**: Respect the structured processes each rule defines
+- **Review Outputs**: Always review generated documents and code before proceeding
 
-- **One Task at a Time**: Focus on completing individual tasks rather than rushing through multiple tasks
-- **Iterative Feedback**: Provide feedback during each phase to ensure accuracy
-- **Review Documents**: Carefully review each generated document before approval
-- **Task Execution**: Execute tasks in order for best results
+## 📋 Rule Comparison
 
-## Requirements
+| Rule | Best For | Input | Output | Duration |
+|------|----------|-------|---------|----------|
+| **Spec Workflow** | Feature planning | Feature idea | Requirements, Design, Tasks | Multi-session |
+| **RIPER-5** | Controlled development | Any dev task | Mode-specific responses | Per-task |
+| **PRD Writer** | Product documentation | Project description | Complete PRD document | Single session |
+| **Content Writer** | Technical writing | Topic/outline | Articles, blog posts | 1-2 sessions |
+| **Code Refactorer** | Code improvement | Existing code | Refactored code + explanations | Single session |
 
-- Cursor IDE with rule support
-- Project workspace with write permissions
+## 🤝 Contributing
 
-## Contributing
+We welcome contributions! To add new rules or improve existing ones:
 
-Feel free to submit issues and enhancement requests. Contributions are welcome!
+1. Fork the repository
+2. Create a feature branch
+3. Follow the established rule format with YAML frontmatter
+4. Add comprehensive documentation
+5. Submit a pull request
 
-## License
+### Rule Format
+Each rule should include:
+```yaml
+---
+name: rule-name
+description: Clear description with examples
+tools: List of required tools
+color: UI color identifier
+---
+```
+
+## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## 🔗 Related Resources
+
+- [Cursor IDE Documentation](https://cursor.sh/docs)
+- [AI Agent Best Practices](https://docs.anthropic.com/claude/docs)
+- [Spec-Driven Development](https://en.wikipedia.org/wiki/Specification-driven_development)
