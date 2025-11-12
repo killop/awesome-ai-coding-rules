@@ -16,10 +16,12 @@
 4. **探索示例**，查看使用方法部分中每个分类的示例
 
 ### 🎯 热门组合
-- **新项目**: `@spec-workflow` → `@6A-workflow` → `@code-expert`
-- **代码审查**: `@linus-coding-style` → `@code-refactorer`
-- **文档编写**: `@prd-writer` → `@content-writer`
-- **学习提升**: `@chatgpt-study-mode` → `@book-recommendation-expert`
+- **新项目**: `@spec-workflow` → `@6A-workflow` → `@ultrathink`
+- **代码卓越**: `@ultrathink` → `@code-expert` → `@linus-coding-style`
+- **AI 提示词优化**: `@depth-method` → `@ai-prompts-optimization`
+- **深度分析**: `@first-principles-thinking` → `@deep-unconstrained-analysis`
+- **文档编写**: `@prd-writer` → `@content-writer` → `@markdown-generator`
+- **学习成长**: `@chatgpt-study-mode` → `@human-3.0-assessment`
 
 ## 📂 规则分类
 
@@ -35,6 +37,9 @@
 全面的六阶段开发流程（对齐→架构→原子化→审批→自动化→评估），用于复杂项目管理和系统化实施。
 
 ### 🔧 代码增强与质量
+
+#### 极致思考 → [ultrathink.md](ultrathink.md)
+受乔布斯启发的编程卓越哲学，强调优雅的解决方案、对细节的极致关注和不断迭代，创造"非常伟大"的软件。
 
 #### 代码专家 → [code-expert.md](code-expert.md)
 强调增量进步、测试驱动开发和实用代码质量标准的先进开发指南，适用于专业软件开发。
@@ -56,6 +61,15 @@
 #### 消息卡片设计师 → [中文版](message-card-CN.md)
 专业的 UI 设计师，专注于创建玻璃拟态风格的消息卡片，具有先进的视觉设计原则和响应式布局。
 
+#### Markdown 生成器 → [中文版](生成Markdown.md)
+专业编辑器，将普通文本转换为结构良好、重点突出的 Markdown 文档，具有清晰的层次结构和强调的关键点。
+
+#### 叙事可视化 → [中文版](叙事可视化.md)
+"叙事可视化导演"，将演讲和演示文稿转换为沉浸式 HTML 幻灯片体验，采用故事驱动的视觉设计。
+
+#### 雷军风格演讲 → [中文版](雷军.md)
+模仿雷军演讲风格的演讲稿生成器，特点是数据驱动的叙事、宏大的故事讲述和精确的量化情感共鸣。
+
 ### 🎓 学习与教育
 
 #### ChatGPT 学习模式 → [英文版](chatgpt-study-mode-EN.md) | [中文版](chatgpt-study-mode-CN.md)
@@ -67,10 +81,33 @@
 #### 图书推荐专家 → [Book-Recommendation-Expert.md](Book-Recommendation-Expert.md)
 个性化图书推荐系统，提供详细的图书分析、益处和跨各种类型和兴趣的定制建议。
 
-### 🚀 AI 增强
+#### HUMAN 3.0 评估 → [Dan-Koe-HUMAN 3.0 Self-Discovery & Metatype Test.md](Dan-Koe-HUMAN 3.0 Self-Discovery & Metatype Test.md)
+全面的个人发展评估框架，评估思维、身体、精神和职业四个象限，识别你的元类型并提供可行的转型策略。
+
+### 🧠 思维与分析框架
+
+#### 第一性原理思维 → [Analyze Questions Using First Principles Thinking.md](Analyze%20Questions%20Using%20First%20Principles%20Thinking.md)
+通过将问题分解为基本真理和本质概念来分析问题，以物理学家般的理性思维处理问题。
+
+#### 蒙代尔-弗莱明三元悖论分析 → [Analyze the problem using the Mundell-Fleming Trilemma.md](Analyze%20the%20problem%20using%20the%20Mundell-Fleming%20Trilemma.md)
+经济分析框架，揭示资本流动、固定汇率和独立货币政策之间的结构性矛盾和权衡。
+
+#### 深度无约束分析 → [In-Depth Analysis Free from Conventional Constraints.md](In-Depth%20Analysis%20Free%20from%20Conventional%20Constraints.md)
+从第一性原理、人类本能和现实世界运作规则出发，提供彻底的基础推理，无传统约束。
+
+#### 书面转口语表达 → [Transform written expressions into spoken ones.md](Transform%20written%20expressions%20into%20spoken%20ones.md)
+将正式的书面文本转换为自然的口语，保持意义的同时强调对话流畅性而非语法完美。
+
+### 🚀 AI 增强与提示词优化
 
 #### GPT 天才提升 → [GPT-GeniusBoost.md](GPT-GeniusBoost.md)
 为高智商用户设计的先进 AI 助手，寻求跨所有领域的全面、深入分析和详细探索。
+
+#### DEPTH 方法 → [best-practice.md](best-practice.md)
+提示词优化框架，使用定义视角、建立指标、提供上下文、任务分解和人类反馈循环，获得更优质的 AI 输出。
+
+#### AI 提示词优化 → [AI Prompts Optimization.md](AI%20Prompts%20Optimization.md)
+大师级提示词优化专家（Lyra），使用 4-D 方法论（解构、诊断、开发、交付）将模糊输入转换为精确提示词。
 
 ### 🎯 专业工具
 
@@ -130,6 +167,7 @@ curl -o .cursor/rules/spec-workflow.md https://raw.githubusercontent.com/youruse
 
 ### 代码质量与增强
 ```
+@ultrathink 帮助我为这个问题设计一个优雅的解决方案
 @code-expert 审查这段代码并建议改进
 @code-refactorer 帮助我清理这个混乱的函数
 @linus-coding-style 分析这段代码的"好品味"和简洁性
@@ -139,7 +177,9 @@ curl -o .cursor/rules/spec-workflow.md https://raw.githubusercontent.com/youruse
 ```
 @prd-writer 为我们的新仪表板功能创建 PRD
 @content-writer 帮助我编写技术文档
-@message-card-designer 设计一个现代化的 UI 组件
+@markdown-generator 将这段文本转换为结构良好的 Markdown
+@narrative-visualization 将这个演示文稿转换为 HTML 幻灯片
+@lei-jun-speech 创建一个雷军风格的产品发布演讲稿
 ```
 
 ### 学习与教育
@@ -147,11 +187,26 @@ curl -o .cursor/rules/spec-workflow.md https://raw.githubusercontent.com/youruse
 @chatgpt-study-mode 通过引导学习帮助我理解这个概念
 @american-buddy-language-coach 练习休闲英语对话
 @book-recommendation-expert 推荐学习软件架构的书籍
+@human-3.0-assessment 评估我在所有生活领域的个人发展
 ```
 
-### AI 增强与工具
+### 思维与分析
+```
+@first-principles-thinking 从基本真理分析这个问题
+@mundell-fleming-trilemma 分析这个经济政策的权衡
+@deep-unconstrained-analysis 提供无传统约束的深度推理
+@written-to-spoken 将这段正式文本转换为自然口语
+```
+
+### AI 增强与提示词优化
 ```
 @gpt-geniusboost 提供这个复杂主题的全面分析
+@depth-method 使用 DEPTH 框架优化我的提示词
+@ai-prompts-optimization 将我的模糊请求转换为精确的提示词
+```
+
+### 专业工具
+```
 @project-naming-master 帮助我为新项目找到一个好名字
 ```
 
@@ -162,16 +217,27 @@ curl -o .cursor/rules/spec-workflow.md https://raw.githubusercontent.com/youruse
 | **规格工作流** | 开发 | 功能规划 | 多会话 | 英文 |
 | **RIPER-5** | 开发 | 受控开发 | 按任务 | 中/英文 |
 | **6A 工作流** | 开发 | 复杂项目管理 | 多会话 | 中文 |
+| **极致思考** | 代码质量 | 优雅设计与卓越 | 持续 | 英文 |
 | **代码专家** | 代码质量 | 专业开发 | 按任务 | 英文 |
 | **代码重构器** | 代码质量 | 代码改进 | 单会话 | 英文 |
 | **Linus 编程风格** | 代码质量 | 代码质量分析 | 单会话 | 中文 |
 | **PRD 写作器** | 文档 | 产品文档 | 单会话 | 英文 |
 | **内容写作器** | 文档 | 技术写作 | 1-2会话 | 英文 |
 | **消息卡片设计师** | 文档 | UI 设计 | 单会话 | 中文 |
+| **Markdown 生成器** | 文档 | 文本格式化 | 单会话 | 中文 |
+| **叙事可视化** | 文档 | 演示文稿设计 | 单会话 | 中文 |
+| **雷军风格演讲** | 文档 | 产品发布演讲 | 单会话 | 中文 |
 | **ChatGPT 学习模式** | 学习 | 教育指导 | 按会话 | 中/英文 |
 | **美国伙伴** | 学习 | 语言学习 | 持续 | 英文 |
 | **图书推荐** | 学习 | 阅读建议 | 单会话 | 英文 |
+| **HUMAN 3.0 评估** | 学习 | 个人发展 | 多会话 | 英文 |
+| **第一性原理** | 思维 | 基础分析 | 按查询 | 英文 |
+| **蒙代尔-弗莱明** | 思维 | 经济分析 | 按查询 | 英文 |
+| **深度无约束** | 思维 | 深度推理 | 按查询 | 英文 |
+| **书面转口语** | 思维 | 语言转换 | 按查询 | 英文 |
 | **GPT 天才提升** | AI 增强 | 深度分析 | 按查询 | 英文 |
+| **DEPTH 方法** | AI 增强 | 提示词优化 | 按查询 | 英文 |
+| **AI 提示词优化** | AI 增强 | 提示词精炼 | 按查询 | 英文 |
 | **项目命名大师** | 工具 | 项目命名 | 单会话 | 英文 |
 
 ## 🤝 贡献
